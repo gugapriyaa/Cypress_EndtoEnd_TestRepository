@@ -1,0 +1,22 @@
+{
+  "name": "cypressetoetestinggitproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gugapriyaa/Cypress_EndtoEnd_TestRepository.git"
+  },
+  "author": "GP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gugapriyaa/Cypress_EndtoEnd_TestRepository/issues"
+  },
+  "homepage": "https://github.com/gugapriyaa/Cypress_EndtoEnd_TestRepository#readme",
+  "devDependencies": {
+    "@types/mocha": "^10.0.10"
+  }
+}
