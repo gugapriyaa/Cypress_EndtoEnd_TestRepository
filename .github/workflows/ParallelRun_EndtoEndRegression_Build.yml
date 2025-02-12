@@ -1,7 +1,7 @@
 name: End-to-end Regression tests
 on: push
 jobs:
-  test_registerFlow-run:
+  testregisterFlow-run:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
@@ -10,11 +10,10 @@ jobs:
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v6
-        with:
-        browser: chrome
+        with:        
         command: npm run test:registerFlow
 
-    test_searchFlow-run:
+    testsearchFlow-run:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
@@ -24,5 +23,4 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-        browser: chrome
         command: npm run test:searchFlow
