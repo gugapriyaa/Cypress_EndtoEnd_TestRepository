@@ -1,5 +1,6 @@
 module.exports = {
   reporter: 'cypress-mochawesome-reporter',
+  video: true,
   e2e: {
     baseUrl: 'https://www.automationexercise.com/',
     setupNodeEvents(on, config) {
