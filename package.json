@@ -1,10 +1,10 @@
 {
   "name": "cypressetoetestinggitproject",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:registerFlow": "npx cypress run --spec cypress/e2e/ui_tests/signupTestSuite.cy.js",
+    "test:searchFlow": "npx cypress run --spec cypress/e2e/ui_tests/searchProductTest.cy.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/gugapriyaa/Cypress_EndtoEnd_TestRepository#readme",
   "devDependencies": {
-    "@types/mocha": "^10.0.10"
-  }
+    "@types/mocha": "^10.0.10",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  },
+  "dependencies": {
+    "cypress-xpath": "^2.0.1"
+  },
+  "description": ""
 }
