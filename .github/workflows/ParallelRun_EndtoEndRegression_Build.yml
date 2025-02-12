@@ -12,8 +12,7 @@ jobs:
         uses: cypress-io/github-action@v6
         with:        
         command: npm run test:registerFlow
-
-    testsearchFlow-run:
+  testsearchFlow-run:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
@@ -22,5 +21,5 @@ jobs:
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v6
-        with:
+        with:        
         command: npm run test:searchFlow
