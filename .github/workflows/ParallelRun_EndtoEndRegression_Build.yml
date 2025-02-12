@@ -24,7 +24,7 @@ jobs:
         with:        
           command: npm run test:searchFlow
       - name: Cypress Test Report
-         uses: actions/upload-artifact@v4
-         with:
+        uses: actions/upload-artifact@v4
+        with:
             name: Mochawesome HTML Report
             path: cypress/reports/html
